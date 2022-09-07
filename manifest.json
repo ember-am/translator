@@ -1,0 +1,22 @@
+{
+    "name": "translator", 
+    "description": "translating text extension..", 
+    "version": "1.0",
+    "manifest_version": 3, 
+    "action": {
+        "default_popup": "popup.html"
+    }, 
+    "content_scripts": [
+        { 
+            "matches": ["*://*/*"], 
+            "js": ["content-script.js"]
+        }
+    ],
+    "web_accessible_resources": [{
+        "resources": ["inject-script.js"],
+        "matches": ["<all_urls>"]
+    }],
+    "background": {
+        "service_worker": "background.js"
+    } 
+}

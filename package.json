@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@vitalets/google-translate-api": "^8.0.0",
+    "cors": "^2.8.5"
+  }
+}
